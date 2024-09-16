@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue Services - Votre Entreprise</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header (réutilisation du header précédent) -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center py-6 px-4">
+      <div class="text-3xl font-bold text-indigo-600">
+        <a href="/">Votre Entreprise</a>
+      </div>
+      <nav class="flex space-x-6 text-lg">
+        <a href="/" class="text-gray-800 hover:text-indigo-600">Accueil</a>
+        <a href="#support" class="text-gray-800 hover:text-indigo-600">Support</a>
+        <a href="#blog" class="text-gray-800 hover:text-indigo-600">Blog</a>
+        <a href="#contact" class="text-gray-800 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Catalogue avec filtre -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-10">Catalogue de Produits</h2>
+
+      <!-- Filtres -->
+      <div class="flex justify-between mb-8">
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-700">Filtrer par catégorie</label>
+          <select class="form-select block w-full mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            <option>Logiciels</option>
+            <option>Services Cloud</option>
+            <option>Solutions Personnalisées</option>
+          </select>
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-700">Trier par</label>
+          <select class="form-select block w-full mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            <option>Prix croissant</option>
+            <option>Prix décroissant</option>
+            <option>Meilleures ventes</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Grille des produits -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Carte produit -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="https://via.placeholder.com/400" alt="Produit 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Logiciel A</h3>
+            <p class="text-gray-700 mb-4">Description du produit.</p>
+            <a href="fiche-produit.html" class="text-indigo-600 font-semibold hover:underline">Voir le produit</a>
+          </div>
+        </div>
+
+        <!-- Autres produits -->
+        <!-- Répéter la même structure pour les autres produits -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (réutilisation du footer précédent) -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Votre Entreprise. Tous droits réservés. | <a href="#" class="hover:underline">Politique de confidentialité</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
